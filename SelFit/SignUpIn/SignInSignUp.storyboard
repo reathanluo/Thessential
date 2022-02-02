@@ -43,12 +43,21 @@
                                     <constraint firstItem="z2O-9R-Wcr" firstAttribute="height" secondItem="Jjg-CH-Ebc" secondAttribute="height" multiplier="0.775" constant="10" id="yF2-J1-2G0"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfinto" translatesAutoresizingMaskIntoConstraints="NO" id="u0d-dE-yaf">
+                                <rect key="frame" x="0.0" y="98" width="414" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="550" id="YZc-fV-vMg"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PmG-hf-R3Z" secondAttribute="trailing" constant="40" id="KoJ-mF-YCo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u0d-dE-yaf" secondAttribute="trailing" id="Zol-jf-CdE"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PmG-hf-R3Z" secondAttribute="bottom" constant="40" id="d1n-cU-RcS"/>
+                            <constraint firstItem="u0d-dE-yaf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="h5x-0r-Bj2"/>
+                            <constraint firstItem="u0d-dE-yaf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hUV-Y9-C3e"/>
                             <constraint firstItem="PmG-hf-R3Z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="iFz-gX-nbx"/>
                         </constraints>
                     </view>
@@ -76,22 +85,22 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="841-0R-cir">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-G9-sKS">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2B3-HN-Ggs">
                                         <rect key="frame" x="0.0" y="140" width="334" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEt-5J-bIa">
                                         <rect key="frame" x="0.0" y="210" width="334" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGm-nv-bQF">
                                         <rect key="frame" x="0.0" y="280" width="334" height="50"/>
@@ -351,6 +360,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="selfinto" width="1080" height="1920"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -18,6 +18,21 @@
 		A63ABA1E27A645B1008A4920 /* SignInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */; };
 		A63ABA2027A64B8B008A4920 /* RegisterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63ABA1F27A64B8B008A4920 /* RegisterLoginViewController.swift */; };
 		A660E23527AA80EE007834B9 /* CalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A660E23427AA80EE007834B9 /* CalendarDay.swift */; };
+		A66A4D2C27AAD480004E7178 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A66A4D2B27AAD480004E7178 /* Kingfisher */; };
+		A66A4D2F27AAD779004E7178 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D2E27AAD779004E7178 /* Secret.swift */; };
+		A66A4D3227AAD7B1004E7178 /* NewSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D3127AAD7B1004E7178 /* NewSources.swift */; };
+		A66A4D3427AAD7C6004E7178 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D3327AAD7C6004E7178 /* Article.swift */; };
+		A66A4D3627AAD7DB004E7178 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D3527AAD7DB004E7178 /* Colors.swift */; };
+		A66A4D3827AAD80F004E7178 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D3727AAD80F004E7178 /* Constants.swift */; };
+		A66A4D3A27AAD82B004E7178 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D3927AAD82B004E7178 /* NetworkManager.swift */; };
+		A66A4D3D27AAD877004E7178 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D3C27AAD877004E7178 /* CategoryVC.swift */; };
+		A66A4D4127AAD8AA004E7178 /* HeadlinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D4027AAD8AA004E7178 /* HeadlinesVC.swift */; };
+		A66A4D4327AAD8DD004E7178 /* DetailNewsStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D4227AAD8DD004E7178 /* DetailNewsStoryVC.swift */; };
+		A66A4D4627AAD926004E7178 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D4527AAD926004E7178 /* CategoryCell.swift */; };
+		A66A4D4827AAD940004E7178 /* HeadlinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D4727AAD940004E7178 /* HeadlinesCell.swift */; };
+		A66A4D4A27AAD956004E7178 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D4927AAD956004E7178 /* TableViewCell.swift */; };
+		A66A4D4C27AAD96B004E7178 /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A4D4B27AAD96B004E7178 /* CustomFlowLayout.swift */; };
+		A66A4D4E27AAD9CE004E7178 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66A4D4D27AAD9CE004E7178 /* CategoryCell.xib */; };
 		A689AF59279C0D99005D41BF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF58279C0D99005D41BF /* UIViewController+Extension.swift */; };
 		A689AF5B279C0F49005D41BF /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF5A279C0F49005D41BF /* UserDefaults+Extension.swift */; };
 		A689AF5E279C10D3005D41BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF5D279C10D3005D41BF /* HomeViewController.swift */; };
@@ -55,6 +70,20 @@
 		A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInSignUp.storyboard; sourceTree = "<group>"; };
 		A63ABA1F27A64B8B008A4920 /* RegisterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLoginViewController.swift; sourceTree = "<group>"; };
 		A660E23427AA80EE007834B9 /* CalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDay.swift; sourceTree = "<group>"; };
+		A66A4D2E27AAD779004E7178 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		A66A4D3127AAD7B1004E7178 /* NewSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSources.swift; sourceTree = "<group>"; };
+		A66A4D3327AAD7C6004E7178 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A66A4D3527AAD7DB004E7178 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A66A4D3727AAD80F004E7178 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A66A4D3927AAD82B004E7178 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A66A4D3C27AAD877004E7178 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		A66A4D4027AAD8AA004E7178 /* HeadlinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesVC.swift; sourceTree = "<group>"; };
+		A66A4D4227AAD8DD004E7178 /* DetailNewsStoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsStoryVC.swift; sourceTree = "<group>"; };
+		A66A4D4527AAD926004E7178 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		A66A4D4727AAD940004E7178 /* HeadlinesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesCell.swift; sourceTree = "<group>"; };
+		A66A4D4927AAD956004E7178 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A66A4D4B27AAD96B004E7178 /* CustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
+		A66A4D4D27AAD9CE004E7178 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		A689AF58279C0D99005D41BF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A689AF5A279C0F49005D41BF /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		A689AF5D279C10D3005D41BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66A4D2C27AAD480004E7178 /* Kingfisher in Frameworks */,
 				A6A7247B27A6880300145617 /* FirebaseDatabase in Frameworks */,
 				A6A7247D27A6880300145617 /* FirebaseFirestore in Frameworks */,
 				A6A7247727A6880300145617 /* FirebaseAnalytics in Frameworks */,
@@ -93,6 +123,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A660E23627AA9307007834B9 /* SignUpIn */ = {
+			isa = PBXGroup;
+			children = (
+				A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */,
+				A6A7248227A6C91800145617 /* RegisterInfoViewController.swift */,
+				A63ABA1F27A64B8B008A4920 /* RegisterLoginViewController.swift */,
+				A63ABA1827A64499008A4920 /* SignUpViewController.swift */,
+				A63ABA1A27A644A7008A4920 /* LoginViewController.swift */,
+				A6A7247127A650EA00145617 /* Utilities.swift */,
+			);
+			path = SignUpIn;
+			sourceTree = "<group>";
+		};
+		A660E23927AA93F5007834B9 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A6DF4010278D6EAB0076A0FC /* ViewController.swift */,
+				52FAD68D27A49A34002CF1B8 /* Event.swift */,
+				52FAD68927A49612002CF1B8 /* EventEditViewController.swift */,
+				52FAD68B27A4962C002CF1B8 /* EventCell.swift */,
+				52FAD68727A438AD002CF1B8 /* WeeklyViewController.swift */,
+				52FAD68527A3FC53002CF1B8 /* CalendarHelper.swift */,
+				52FAD68327A3EECC002CF1B8 /* CalendarCell.swift */,
+				A660E23427AA80EE007834B9 /* CalendarDay.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		A66A4D2D27AAD76C004E7178 /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				A66A4D2E27AAD779004E7178 /* Secret.swift */,
+			);
+			path = APIKey;
+			sourceTree = "<group>";
+		};
+		A66A4D3027AAD79B004E7178 /* NewsModels */ = {
+			isa = PBXGroup;
+			children = (
+				A66A4D3127AAD7B1004E7178 /* NewSources.swift */,
+				A66A4D3327AAD7C6004E7178 /* Article.swift */,
+				A66A4D3527AAD7DB004E7178 /* Colors.swift */,
+				A66A4D3727AAD80F004E7178 /* Constants.swift */,
+			);
+			path = NewsModels;
+			sourceTree = "<group>";
+		};
+		A66A4D3B27AAD852004E7178 /* NewsController */ = {
+			isa = PBXGroup;
+			children = (
+				A66A4D3C27AAD877004E7178 /* CategoryVC.swift */,
+				A66A4D4027AAD8AA004E7178 /* HeadlinesVC.swift */,
+				A66A4D4227AAD8DD004E7178 /* DetailNewsStoryVC.swift */,
+			);
+			path = NewsController;
+			sourceTree = "<group>";
+		};
+		A66A4D4427AAD918004E7178 /* NewsView */ = {
+			isa = PBXGroup;
+			children = (
+				A66A4D4527AAD926004E7178 /* CategoryCell.swift */,
+				A66A4D4727AAD940004E7178 /* HeadlinesCell.swift */,
+				A66A4D4927AAD956004E7178 /* TableViewCell.swift */,
+				A66A4D4B27AAD96B004E7178 /* CustomFlowLayout.swift */,
+				A66A4D4D27AAD9CE004E7178 /* CategoryCell.xib */,
+			);
+			path = NewsView;
+			sourceTree = "<group>";
+		};
 		A689AF5C279C109F005D41BF /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,32 +255,25 @@
 		A6DF400B278D6EAB0076A0FC /* SelFit */ = {
 			isa = PBXGroup;
 			children = (
+				A66A4D4427AAD918004E7178 /* NewsView */,
+				A66A4D3027AAD79B004E7178 /* NewsModels */,
+				A66A4D2D27AAD76C004E7178 /* APIKey */,
+				A660E23627AA9307007834B9 /* SignUpIn */,
 				A69713CC2797FEDB0047D10F /* Extensions */,
 				A69713C82797F4010047D10F /* Models */,
 				A69713C62797F3E20047D10F /* Views */,
-				A6DF400C278D6EAB0076A0FC /* AppDelegate.swift */,
-				A6DF400E278D6EAB0076A0FC /* SceneDelegate.swift */,
-				A6DF4010278D6EAB0076A0FC /* ViewController.swift */,
-				A660E23427AA80EE007834B9 /* CalendarDay.swift */,
+				A660E23927AA93F5007834B9 /* Calendar */,
+				A66A4D3B27AAD852004E7178 /* NewsController */,
 				A6DF4012278D6EAB0076A0FC /* Main.storyboard */,
+				A6DF400E278D6EAB0076A0FC /* SceneDelegate.swift */,
+				A6DF400C278D6EAB0076A0FC /* AppDelegate.swift */,
 				A6A7248027A6C10D00145617 /* ProfileViewController.swift */,
-				52FAD68D27A49A34002CF1B8 /* Event.swift */,
-				52FAD68927A49612002CF1B8 /* EventEditViewController.swift */,
-				52FAD68B27A4962C002CF1B8 /* EventCell.swift */,
-				52FAD68727A438AD002CF1B8 /* WeeklyViewController.swift */,
-				52FAD68527A3FC53002CF1B8 /* CalendarHelper.swift */,
-				52FAD68327A3EECC002CF1B8 /* CalendarCell.swift */,
 				A6DF4018278D6EAB0076A0FC /* Assets.xcassets */,
 				A6DF401A278D6EAB0076A0FC /* LaunchScreen.storyboard */,
 				A6DF401D278D6EAB0076A0FC /* Info.plist */,
 				A6DF4015278D6EAB0076A0FC /* SelFit.xcdatamodeld */,
-				A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */,
-				A6A7248227A6C91800145617 /* RegisterInfoViewController.swift */,
-				A63ABA1F27A64B8B008A4920 /* RegisterLoginViewController.swift */,
-				A63ABA1827A64499008A4920 /* SignUpViewController.swift */,
-				A63ABA1A27A644A7008A4920 /* LoginViewController.swift */,
-				A6A7247127A650EA00145617 /* Utilities.swift */,
 				A6A7247327A6872C00145617 /* GoogleService-Info.plist */,
+				A66A4D3927AAD82B004E7178 /* NetworkManager.swift */,
 			);
 			path = SelFit;
 			sourceTree = "<group>";
@@ -208,6 +300,7 @@
 				A6A7247A27A6880300145617 /* FirebaseDatabase */,
 				A6A7247C27A6880300145617 /* FirebaseFirestore */,
 				A6A7247E27A6880300145617 /* FirebaseStorage */,
+				A66A4D2B27AAD480004E7178 /* Kingfisher */,
 			);
 			productName = SelFit;
 			productReference = A6DF4009278D6EAB0076A0FC /* SelFit.app */;
@@ -239,6 +332,7 @@
 			mainGroup = A6DF4000278D6EAB0076A0FC;
 			packageReferences = (
 				A6A7247527A6880300145617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A66A4D2A27AAD480004E7178 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = A6DF400A278D6EAB0076A0FC /* Products */;
 			projectDirPath = "";
@@ -255,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A63ABA1E27A645B1008A4920 /* SignInSignUp.storyboard in Resources */,
+				A66A4D4E27AAD9CE004E7178 /* CategoryCell.xib in Resources */,
 				A6DF401C278D6EAB0076A0FC /* LaunchScreen.storyboard in Resources */,
 				A6A7247427A6872C00145617 /* GoogleService-Info.plist in Resources */,
 				A6DF4019278D6EAB0076A0FC /* Assets.xcassets in Resources */,
@@ -270,22 +365,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69713D0279801BA0047D10F /* OnboardingSlide.swift in Sources */,
+				A66A4D2F27AAD779004E7178 /* Secret.swift in Sources */,
+				A66A4D3427AAD7C6004E7178 /* Article.swift in Sources */,
 				52FAD68A27A49612002CF1B8 /* EventEditViewController.swift in Sources */,
 				A69713CE2797FF560047D10F /* UIView+Extension.swift in Sources */,
+				A66A4D3827AAD80F004E7178 /* Constants.swift in Sources */,
 				A63ABA2027A64B8B008A4920 /* RegisterLoginViewController.swift in Sources */,
+				A66A4D4827AAD940004E7178 /* HeadlinesCell.swift in Sources */,
+				A66A4D3227AAD7B1004E7178 /* NewSources.swift in Sources */,
 				A6DF4011278D6EAB0076A0FC /* ViewController.swift in Sources */,
 				A63ABA1B27A644A7008A4920 /* LoginViewController.swift in Sources */,
 				A6A7248127A6C10D00145617 /* ProfileViewController.swift in Sources */,
 				A69713D4279805A30047D10F /* OnboardingCollectionViewCell.swift in Sources */,
 				A6DF400D278D6EAB0076A0FC /* AppDelegate.swift in Sources */,
 				A63ABA1927A64499008A4920 /* SignUpViewController.swift in Sources */,
+				A66A4D4C27AAD96B004E7178 /* CustomFlowLayout.swift in Sources */,
+				A66A4D4127AAD8AA004E7178 /* HeadlinesVC.swift in Sources */,
 				A6A7247227A650EA00145617 /* Utilities.swift in Sources */,
 				A69713CB2797F4440047D10F /* OnboardingViewController.swift in Sources */,
 				A6DF4017278D6EAB0076A0FC /* SelFit.xcdatamodeld in Sources */,
 				A6A7248327A6C91800145617 /* RegisterInfoViewController.swift in Sources */,
+				A66A4D4327AAD8DD004E7178 /* DetailNewsStoryVC.swift in Sources */,
+				A66A4D3D27AAD877004E7178 /* CategoryVC.swift in Sources */,
+				A66A4D3627AAD7DB004E7178 /* Colors.swift in Sources */,
 				52FAD68E27A49A34002CF1B8 /* Event.swift in Sources */,
+				A66A4D4627AAD926004E7178 /* CategoryCell.swift in Sources */,
+				A66A4D3A27AAD82B004E7178 /* NetworkManager.swift in Sources */,
 				52FAD68827A438AD002CF1B8 /* WeeklyViewController.swift in Sources */,
 				52FAD68627A3FC53002CF1B8 /* CalendarHelper.swift in Sources */,
+				A66A4D4A27AAD956004E7178 /* TableViewCell.swift in Sources */,
 				52FAD68427A3EECC002CF1B8 /* CalendarCell.swift in Sources */,
 				A660E23527AA80EE007834B9 /* CalendarDay.swift in Sources */,
 				A689AF5E279C10D3005D41BF /* HomeViewController.swift in Sources */,
@@ -512,6 +620,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A66A4D2A27AAD480004E7178 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A6A7247527A6880300145617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -523,6 +639,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A66A4D2B27AAD480004E7178 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A66A4D2A27AAD480004E7178 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		A6A7247627A6880300145617 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A6A7247527A6880300145617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
