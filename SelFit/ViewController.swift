@@ -13,8 +13,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
 
     
-    var totalSquares = [CalendarDay]()
-    var selectedDate = Date()
+    var totalSquares = [String]()
+    
     
     override func viewDidLoad()
     {
@@ -40,31 +40,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let firstDayOfMonth = CalendarHelper().firstOfMonth(date: selectedDate)
         let startingSpaces = CalendarHelper().weekDay(date: firstDayOfMonth)
         
-        let prevMonth = CalendarHelper().minusMonth(date: selectedDate)
-        let daysInPrevMonth = CalendarHelper().daysInMonth(date: prevMonth)
-        
         var count: Int = 1
         
         while(count <= 42)
         {
-            let calendarDay = CalendarDay()
-            if count <= startingSpaces
+            if(count <= startingSpaces || count - startingSpaces > daysInMonth)
             {
-                let prevMonthDay = daysInPrevMonth - startingSpaces + count
-                calendarDay.day = String(prevMonthDay)
-                calendarDay.month = CalendarDay.Month.previous
-            }
-            else if count - startingSpaces > daysInMonth
-            {
-                calendarDay.day = String(count - daysInMonth - startingSpaces)
-                calendarDay.month = CalendarDay.Month.next
+                totalSquares.append("")
             }
             else
             {
-                calendarDay.day = String(count - startingSpaces)
-                calendarDay.month = CalendarDay.Month.current
+                totalSquares.append(String(count - startingSpaces))
             }
-            totalSquares.append(calendarDay)
             count += 1
         }
         
@@ -80,17 +67,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarCell
         
-        let calendarDay = totalSquares[indexPath.item]
-        
-        cell.dayOfMonth.text = calendarDay.day
-        if(calendarDay.month == CalendarDay.Month.current)
-        {
-            cell.dayOfMonth.textColor = UIColor.black
-        }
-        else
-        {
-            cell.dayOfMonth.textColor = UIColor.gray
-        }
+        cell.dayOfMonth.text = totalSquares[indexPath.item]
         
         return cell
     }
@@ -111,11 +88,4 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     {
         return false
     }
-    
-    override func viewDidAppear(_ animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        setMonthView()
-    }
 }
-

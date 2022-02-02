@@ -63,7 +63,7 @@ class RegisterInfoViewController: UIViewController {
         }
     
     
-        func transitionToMain(){
+    func transitionToMain(){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "HomeNC") as! UITabBarController
             vc.modalPresentationStyle = .fullScreen

@@ -17,8 +17,6 @@
 		A63ABA1B27A644A7008A4920 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63ABA1A27A644A7008A4920 /* LoginViewController.swift */; };
 		A63ABA1E27A645B1008A4920 /* SignInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */; };
 		A63ABA2027A64B8B008A4920 /* RegisterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63ABA1F27A64B8B008A4920 /* RegisterLoginViewController.swift */; };
-		A660E23127AA7E81007834B9 /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A660E23027AA7E81007834B9 /* DailyCell.swift */; };
-		A660E23327AA7EC0007834B9 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A660E23227AA7EC0007834B9 /* DailyViewController.swift */; };
 		A660E23527AA80EE007834B9 /* CalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A660E23427AA80EE007834B9 /* CalendarDay.swift */; };
 		A689AF59279C0D99005D41BF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF58279C0D99005D41BF /* UIViewController+Extension.swift */; };
 		A689AF5B279C0F49005D41BF /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF5A279C0F49005D41BF /* UserDefaults+Extension.swift */; };
@@ -56,8 +54,6 @@
 		A63ABA1A27A644A7008A4920 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInSignUp.storyboard; sourceTree = "<group>"; };
 		A63ABA1F27A64B8B008A4920 /* RegisterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLoginViewController.swift; sourceTree = "<group>"; };
-		A660E23027AA7E81007834B9 /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
-		A660E23227AA7EC0007834B9 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		A660E23427AA80EE007834B9 /* CalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDay.swift; sourceTree = "<group>"; };
 		A689AF58279C0D99005D41BF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A689AF5A279C0F49005D41BF /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
@@ -168,8 +164,6 @@
 				A6DF4010278D6EAB0076A0FC /* ViewController.swift */,
 				A660E23427AA80EE007834B9 /* CalendarDay.swift */,
 				A6DF4012278D6EAB0076A0FC /* Main.storyboard */,
-				A660E23027AA7E81007834B9 /* DailyCell.swift */,
-				A660E23227AA7EC0007834B9 /* DailyViewController.swift */,
 				A6A7248027A6C10D00145617 /* ProfileViewController.swift */,
 				52FAD68D27A49A34002CF1B8 /* Event.swift */,
 				52FAD68927A49612002CF1B8 /* EventEditViewController.swift */,
@@ -288,13 +282,11 @@
 				A6A7247227A650EA00145617 /* Utilities.swift in Sources */,
 				A69713CB2797F4440047D10F /* OnboardingViewController.swift in Sources */,
 				A6DF4017278D6EAB0076A0FC /* SelFit.xcdatamodeld in Sources */,
-				A660E23127AA7E81007834B9 /* DailyCell.swift in Sources */,
 				A6A7248327A6C91800145617 /* RegisterInfoViewController.swift in Sources */,
 				52FAD68E27A49A34002CF1B8 /* Event.swift in Sources */,
 				52FAD68827A438AD002CF1B8 /* WeeklyViewController.swift in Sources */,
 				52FAD68627A3FC53002CF1B8 /* CalendarHelper.swift in Sources */,
 				52FAD68427A3EECC002CF1B8 /* CalendarCell.swift in Sources */,
-				A660E23327AA7EC0007834B9 /* DailyViewController.swift in Sources */,
 				A660E23527AA80EE007834B9 /* CalendarDay.swift in Sources */,
 				A689AF5E279C10D3005D41BF /* HomeViewController.swift in Sources */,
 				52FAD68C27A4962C002CF1B8 /* EventCell.swift in Sources */,

@@ -68,7 +68,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         if(date == selectedDate)
         {
-            cell.backgroundColor = UIColor.systemGreen
+            cell.backgroundColor = UIColor.systemBlue
         }
         else
         {

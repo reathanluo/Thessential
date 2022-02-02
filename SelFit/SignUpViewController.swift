@@ -78,6 +78,7 @@ class SignUpViewController: UIViewController {
                 else{
                     let db = Firestore.firestore()
                     db.collection("users").document(result!.user.uid).setData(["firstname":firstName,"surname":surname,"uid":result!.user.uid])
+                    self.transitionToMain()
                     
                 }
             })
@@ -96,6 +97,13 @@ class SignUpViewController: UIViewController {
     func transToSignIn(){
         let storyboard = UIStoryboard(name: "SignInSignUp", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "SignIn")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
+    
+    func transitionToMain(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "HomeNC") as! UITabBarController
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }

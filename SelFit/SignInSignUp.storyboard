@@ -102,7 +102,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                         <connections>
                                             <action selector="signUpTabbed:" destination="Rus-2D-blE" eventType="touchUpInside" id="1tt-Yl-I95"/>
-                                            <segue destination="L6P-oP-gXt" kind="show" id="SD6-RJ-e0F"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-fN-AtK">
@@ -292,7 +291,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-ar-NoP">
-                                <rect key="frame" x="40" y="138" width="334" height="220"/>
+                                <rect key="frame" x="40" y="94" width="334" height="220"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90H-dh-tMI">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
