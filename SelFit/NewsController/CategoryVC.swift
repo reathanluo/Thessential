@@ -13,7 +13,7 @@ class CategoryVC: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    let category = ["General", "Health", "Entertainment", "Sports"]
+    let category = ["General", "Business", "Science", "Technology", "Health", "Entertainment", "Sports"]
     var articles: [Article] = []
     
     override func viewDidLoad() {
@@ -50,6 +50,12 @@ extension CategoryVC: UICollectionViewDataSource {
         switch categoryName {
         case K.general:
             cell.backgroundColor = CategoryColor.generalColor.rawValue
+        case K.business:
+            cell.backgroundColor = CategoryColor.businessColor.rawValue
+        case K.science:
+            cell.backgroundColor = CategoryColor.scienceColor.rawValue
+        case K.technology:
+            cell.backgroundColor = CategoryColor.techColor.rawValue
         case K.health:
             cell.backgroundColor = CategoryColor.healthColor.rawValue
         case K.entertainment:
