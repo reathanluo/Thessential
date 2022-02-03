@@ -7,11 +7,15 @@
 
 import UIKit
 
-var selectedDate = Date()
 
 class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,
                             UITableViewDelegate, UITableViewDataSource
 {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    let taskDAL: TaskDAL = TaskDAL()
+    
+    var thisDayTask:[CoreDataEvents] = []
     
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +30,8 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         setCellsView()
         setWeekView()
+        
+        
     }
     
     func setCellsView()
@@ -41,7 +47,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     {
         totalSquares.removeAll()
         
-        var current = CalendarHelper().sundayForDate(date: selectedDate)
+        var current = CalendarHelper().sundayForDate(date: appDelegate.selectedDate)
         let nextSunday = CalendarHelper().addDays(date: current, days: 7)
         
         while (current < nextSunday)
@@ -50,10 +56,10 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
             current = CalendarHelper().addDays(date: current, days: 1)
         }
         
-        monthLabel.text = CalendarHelper().monthString(date: selectedDate)
-            + " " + CalendarHelper().yearString(date: selectedDate)
+        monthLabel.text = CalendarHelper().monthString(date: appDelegate.selectedDate)
+        + " " + CalendarHelper().yearString(date: appDelegate.selectedDate)
         collectionView.reloadData()
-        tableView.reloadData()
+        self.tableView.reloadData()
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -66,7 +72,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         let date = totalSquares[indexPath.item]
         cell.dayOfMonth.text = String(CalendarHelper().dayOfMonth(date: date))
         
-        if(date == selectedDate)
+        if(date == appDelegate.selectedDate)
         {
             cell.backgroundColor = UIColor.systemBlue
         }
@@ -81,20 +87,38 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-        selectedDate = totalSquares[indexPath.item]
+        let day = totalSquares[indexPath.item]
+        appDelegate.selectedDate = day
+        
+        thisDayTask = []
+        
+        let formatter = DateFormatter()
+        formatter.timeStyle = .none
+        formatter.dateStyle = .full
+        
+        for e in taskDAL.retrieveAllEvents()
+        {
+            if (formatter.string(from: e.date) ==   formatter.string(from: appDelegate.selectedDate))
+            {
+                thisDayTask.append(e)
+                print(e)
+            }
+        }
+        
         collectionView.reloadData()
-        tableView.reloadData()
+        self.tableView.reloadData()
+        
     }
     
     @IBAction func previousWeek(_ sender: Any)
     {
-        selectedDate = CalendarHelper().addDays(date: selectedDate, days: -7)
+        appDelegate.selectedDate = CalendarHelper().addDays(date: appDelegate.selectedDate, days: -7)
         setWeekView()
     }
     
     @IBAction func nextWeek(_ sender: Any)
     {
-        selectedDate = CalendarHelper().addDays(date: selectedDate, days: 7)
+        appDelegate.selectedDate = CalendarHelper().addDays(date: appDelegate.selectedDate, days: 7)
         setWeekView()
     }
     
@@ -107,20 +131,29 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return Event().eventsForDate(date: selectedDate).count
+        return thisDayTask.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! EventCell
-        let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
+        let event:CoreDataEvents = thisDayTask[indexPath.row]
         cell.eventLabel.text = event.name + " " + CalendarHelper().timeString(date: event.date)
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle:
+            UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+                if editingStyle == UITableViewCell.EditingStyle.delete {
+                    let event = thisDayTask[indexPath.row]
+                    taskDAL.deleteEvent(event: event)
+                    self.tableView.reloadData()
+                }
+            }
+    
     override func viewDidAppear(_ animated: Bool)
     {
-        super.viewDidAppear(animated)
+        self.tableView.reloadData()
         setWeekView()
     }
 }
