@@ -50,7 +50,6 @@ class EditProfileViewController: UIViewController {
             _ = navigationController?.popViewController(animated: true)
 
         }
-
         
         
     }
