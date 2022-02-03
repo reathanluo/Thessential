@@ -7,7 +7,7 @@
 
 
 import Foundation
-
+ 
 
 var eventsList = [Event]()
 
@@ -16,6 +16,7 @@ class Event
     var id: Int!
     var name: String!
     var date: Date!
+    
     
     func eventsForDate(date: Date) -> [Event]
     {
@@ -29,4 +30,6 @@ class Event
         }
         return daysEvents
     }
+    
+    
 }

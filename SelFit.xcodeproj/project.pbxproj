@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5249FBB127AB93ED0025443F /* TaskDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249FBB027AB93ED0025443F /* TaskDAL.swift */; };
+		525ED63D27ABAC3200C1AA3E /* CoreDataEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525ED63C27ABAC3200C1AA3E /* CoreDataEvents.swift */; };
 		52FAD68427A3EECC002CF1B8 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68327A3EECC002CF1B8 /* CalendarCell.swift */; };
 		52FAD68627A3FC53002CF1B8 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68527A3FC53002CF1B8 /* CalendarHelper.swift */; };
 		52FAD68827A438AD002CF1B8 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68727A438AD002CF1B8 /* WeeklyViewController.swift */; };
@@ -60,6 +62,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5249FBB027AB93ED0025443F /* TaskDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDAL.swift; sourceTree = "<group>"; };
+		525ED63C27ABAC3200C1AA3E /* CoreDataEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEvents.swift; sourceTree = "<group>"; };
 		52FAD68327A3EECC002CF1B8 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		52FAD68527A3FC53002CF1B8 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		52FAD68727A438AD002CF1B8 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				52FAD68527A3FC53002CF1B8 /* CalendarHelper.swift */,
 				52FAD68327A3EECC002CF1B8 /* CalendarCell.swift */,
 				A660E23427AA80EE007834B9 /* CalendarDay.swift */,
+				5249FBB027AB93ED0025443F /* TaskDAL.swift */,
+				525ED63C27ABAC3200C1AA3E /* CoreDataEvents.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525ED63D27ABAC3200C1AA3E /* CoreDataEvents.swift in Sources */,
 				A69713D0279801BA0047D10F /* OnboardingSlide.swift in Sources */,
 				A66A4D2F27AAD779004E7178 /* Secret.swift in Sources */,
 				A66A4D3427AAD7C6004E7178 /* Article.swift in Sources */,
@@ -404,6 +411,7 @@
 				52FAD68C27A4962C002CF1B8 /* EventCell.swift in Sources */,
 				A689AF59279C0D99005D41BF /* UIViewController+Extension.swift in Sources */,
 				A689AF5B279C0F49005D41BF /* UserDefaults+Extension.swift in Sources */,
+				5249FBB127AB93ED0025443F /* TaskDAL.swift in Sources */,
 				A6DF400F278D6EAB0076A0FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
