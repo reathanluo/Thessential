@@ -13,6 +13,7 @@
 		52FAD68A27A49612002CF1B8 /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68927A49612002CF1B8 /* EventEditViewController.swift */; };
 		52FAD68C27A4962C002CF1B8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68B27A4962C002CF1B8 /* EventCell.swift */; };
 		52FAD68E27A49A34002CF1B8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68D27A49A34002CF1B8 /* Event.swift */; };
+		A62044E327ABA47E00883A08 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62044E227ABA47E00883A08 /* EditProfileViewController.swift */; };
 		A63ABA1927A64499008A4920 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63ABA1827A64499008A4920 /* SignUpViewController.swift */; };
 		A63ABA1B27A644A7008A4920 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63ABA1A27A644A7008A4920 /* LoginViewController.swift */; };
 		A63ABA1E27A645B1008A4920 /* SignInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */; };
@@ -65,6 +66,7 @@
 		52FAD68927A49612002CF1B8 /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		52FAD68B27A4962C002CF1B8 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		52FAD68D27A49A34002CF1B8 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A62044E227ABA47E00883A08 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A63ABA1827A64499008A4920 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A63ABA1A27A644A7008A4920 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInSignUp.storyboard; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				A660E23927AA93F5007834B9 /* Calendar */,
 				A66A4D3B27AAD852004E7178 /* NewsController */,
 				A6DF4012278D6EAB0076A0FC /* Main.storyboard */,
+				A62044E227ABA47E00883A08 /* EditProfileViewController.swift */,
 				A6DF400E278D6EAB0076A0FC /* SceneDelegate.swift */,
 				A6DF400C278D6EAB0076A0FC /* AppDelegate.swift */,
 				A6A7248027A6C10D00145617 /* ProfileViewController.swift */,
@@ -390,6 +393,7 @@
 				A66A4D3627AAD7DB004E7178 /* Colors.swift in Sources */,
 				52FAD68E27A49A34002CF1B8 /* Event.swift in Sources */,
 				A66A4D4627AAD926004E7178 /* CategoryCell.swift in Sources */,
+				A62044E327ABA47E00883A08 /* EditProfileViewController.swift in Sources */,
 				A66A4D3A27AAD82B004E7178 /* NetworkManager.swift in Sources */,
 				52FAD68827A438AD002CF1B8 /* WeeklyViewController.swift in Sources */,
 				52FAD68627A3FC53002CF1B8 /* CalendarHelper.swift in Sources */,
