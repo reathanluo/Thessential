@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct K {
+struct Constants {
     static let general = "General"
     static let business = "Business"
     static let science = "Science"

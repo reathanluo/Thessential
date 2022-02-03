@@ -30,9 +30,9 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         setCellsView()
         setWeekView()
-        
-        
     }
+    
+    
     
     func setCellsView()
     {

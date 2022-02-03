@@ -28,9 +28,9 @@ class OnboardingViewController:UIViewController{
         super.viewDidLoad()
         
         slides = [
-            OnboardingSlide(title: "Track your health record", description: "Weight? Height? Fitness? Keep it in SelFit safely", image: UIImage(named: "track")!),
-            OnboardingSlide(title: "Need a calendar?", description: "Feel free to add your activities into SelFit calendars", image: UIImage(named: "track2")!),
-            OnboardingSlide(title: "Visualisation of your health", description: "Charts and plans are always there for you", image: UIImage(named: "track3")!)
+            OnboardingSlide(title: "Take down your notes", description: "At school? At Home? No matter where, take down your notes and ideas", image: UIImage(named: "track")!),
+            OnboardingSlide(title: "Need a calendar?", description: "Feel free to add your activities and events into calendars", image: UIImage(named: "track2")!),
+            OnboardingSlide(title: "Big news!", description: "Check out what is happeing in the world!", image: UIImage(named: "track3")!)
         ]
         pageControl.numberOfPages = slides.count
 

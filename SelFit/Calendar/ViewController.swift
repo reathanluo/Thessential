@@ -22,7 +22,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         setCellsView()
         setMonthView()
+        
     }
+
+    
+    
     
     func setCellsView()
     {
@@ -71,6 +75,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.dayOfMonth.text = totalSquares[indexPath.item]
         
         return cell
+        
+        
     }
     
     @IBAction func previousMonth(_ sender: Any)

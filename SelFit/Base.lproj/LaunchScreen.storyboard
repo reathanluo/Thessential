@@ -16,20 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="sva-Xs-YEr">
-                                <rect key="frame" x="-43" y="203" width="500" height="500"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sf" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-8E-UDD">
-                                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="0Tu-K6-Rlj">
+                                <rect key="frame" x="10" y="94" width="394" height="718"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sva-Xs-YEr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mlf-C6-bwy"/>
-                            <constraint firstItem="sva-Xs-YEr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yXr-Il-hwG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Tu-K6-Rlj" secondAttribute="bottom" constant="50" id="06s-0E-b3T"/>
+                            <constraint firstItem="0Tu-K6-Rlj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="WDc-4c-mN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Tu-K6-Rlj" secondAttribute="trailing" constant="10" id="bMt-fC-0h1"/>
+                            <constraint firstItem="0Tu-K6-Rlj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xQj-o4-7hv"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,7 +36,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sf" width="500" height="500"/>
+        <image name="launch" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
