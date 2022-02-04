@@ -19,7 +19,6 @@
 		52FAD68C27A4962C002CF1B8 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68B27A4962C002CF1B8 /* EventCell.swift */; };
 		52FAD68E27A49A34002CF1B8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAD68D27A49A34002CF1B8 /* Event.swift */; };
 		A62044E327ABA47E00883A08 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62044E227ABA47E00883A08 /* EditProfileViewController.swift */; };
-		A62044E827AD149C00883A08 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = A62044E727AD149C00883A08 /* SkyFloatingLabelTextField */; };
 		A63ABA1927A64499008A4920 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63ABA1827A64499008A4920 /* SignUpViewController.swift */; };
 		A63ABA1B27A644A7008A4920 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63ABA1A27A644A7008A4920 /* LoginViewController.swift */; };
 		A63ABA1E27A645B1008A4920 /* SignInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63ABA1D27A645B1008A4920 /* SignInSignUp.storyboard */; };
@@ -42,6 +41,7 @@
 		A689AF59279C0D99005D41BF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF58279C0D99005D41BF /* UIViewController+Extension.swift */; };
 		A689AF5B279C0F49005D41BF /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF5A279C0F49005D41BF /* UserDefaults+Extension.swift */; };
 		A689AF5E279C10D3005D41BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF5D279C10D3005D41BF /* HomeViewController.swift */; };
+		A68E583827AD3B1100D6A460 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = A68E583727AD3B1100D6A460 /* SkyFloatingLabelTextField */; };
 		A69713CB2797F4440047D10F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69713CA2797F4440047D10F /* OnboardingViewController.swift */; };
 		A69713CE2797FF560047D10F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69713CD2797FF560047D10F /* UIView+Extension.swift */; };
 		A69713D0279801BA0047D10F /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69713CF279801BA0047D10F /* OnboardingSlide.swift */; };
@@ -124,7 +124,7 @@
 			files = (
 				A66A4D2C27AAD480004E7178 /* Kingfisher in Frameworks */,
 				A6A7247B27A6880300145617 /* FirebaseDatabase in Frameworks */,
-				A62044E827AD149C00883A08 /* SkyFloatingLabelTextField in Frameworks */,
+				A68E583827AD3B1100D6A460 /* SkyFloatingLabelTextField in Frameworks */,
 				A6A7247D27A6880300145617 /* FirebaseFirestore in Frameworks */,
 				A6A7247727A6880300145617 /* FirebaseAnalytics in Frameworks */,
 				A6A7247F27A6880300145617 /* FirebaseStorage in Frameworks */,
@@ -152,17 +152,6 @@
 				A62044E227ABA47E00883A08 /* EditProfileViewController.swift */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		A62044E527ACDC7D00883A08 /* News */ = {
-			isa = PBXGroup;
-			children = (
-				A66A4D3B27AAD852004E7178 /* NewsController */,
-				A66A4D4427AAD918004E7178 /* NewsView */,
-				A66A4D3027AAD79B004E7178 /* NewsModels */,
-				A66A4D2D27AAD76C004E7178 /* NewsAPI */,
-			);
-			path = News;
 			sourceTree = "<group>";
 		};
 		A660E23627AA9307007834B9 /* SignUpIn */ = {
@@ -299,9 +288,12 @@
 		A6DF400B278D6EAB0076A0FC /* SelFit */ = {
 			isa = PBXGroup;
 			children = (
-				A62044E527ACDC7D00883A08 /* News */,
 				0ED2C0CF27AC2B8C0051B92C /* Notes */,
 				A62044E427ABFBC400883A08 /* Profile */,
+				A66A4D3B27AAD852004E7178 /* NewsController */,
+				A66A4D4427AAD918004E7178 /* NewsView */,
+				A66A4D3027AAD79B004E7178 /* NewsModels */,
+				A66A4D2D27AAD76C004E7178 /* NewsAPI */,
 				A660E23627AA9307007834B9 /* SignUpIn */,
 				A69713CC2797FEDB0047D10F /* Extensions */,
 				A69713C82797F4010047D10F /* OnBoardingModels */,
@@ -342,7 +334,7 @@
 				A6A7247C27A6880300145617 /* FirebaseFirestore */,
 				A6A7247E27A6880300145617 /* FirebaseStorage */,
 				A66A4D2B27AAD480004E7178 /* Kingfisher */,
-				A62044E727AD149C00883A08 /* SkyFloatingLabelTextField */,
+				A68E583727AD3B1100D6A460 /* SkyFloatingLabelTextField */,
 			);
 			productName = SelFit;
 			productReference = A6DF4009278D6EAB0076A0FC /* SelFit.app */;
@@ -375,7 +367,7 @@
 			packageReferences = (
 				A6A7247527A6880300145617 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				A66A4D2A27AAD480004E7178 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				A62044E627AD149B00883A08 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+				A68E583627AD3B1100D6A460 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
 			);
 			productRefGroup = A6DF400A278D6EAB0076A0FC /* Products */;
 			projectDirPath = "";
@@ -670,17 +662,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A62044E627AD149B00883A08 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
 		A66A4D2A27AAD480004E7178 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A68E583627AD3B1100D6A460 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -697,15 +689,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A62044E727AD149C00883A08 /* SkyFloatingLabelTextField */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A62044E627AD149B00883A08 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
-			productName = SkyFloatingLabelTextField;
-		};
 		A66A4D2B27AAD480004E7178 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A66A4D2A27AAD480004E7178 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		A68E583727AD3B1100D6A460 /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A68E583627AD3B1100D6A460 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
 		};
 		A6A7247627A6880300145617 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -81,7 +81,7 @@ extension CategoryVC: UICollectionViewDelegate {
         NetworkManager.singleton.getArticles(passedInCategory: selectedCategory.lowercased()) { result in
             switch result {
             case let .success(gotArticles):
-
+                //                print(gotArticles)
                 let sampleStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let headLineVC  = sampleStoryBoard.instantiateViewController(withIdentifier: Constants.headlinesCellID) as! HeadlinesVC
                 headLineVC.headlines = gotArticles!

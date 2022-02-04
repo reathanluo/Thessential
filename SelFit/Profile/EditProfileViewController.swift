@@ -10,7 +10,6 @@ import Firebase
 import FirebaseStorage
 import SkyFloatingLabelTextField
 
-
 class EditProfileViewController: UIViewController {
 
     @IBOutlet weak var surnameTF: UITextField!
@@ -20,6 +19,7 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var nameTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
     }
     
@@ -32,10 +32,10 @@ class EditProfileViewController: UIViewController {
         if (username != "") {
             updateNameData(name: username!)
         }
+
         if (surname != "") {
             updateSurnameData(name: surname!)
         }
-
         
         if (bio != "") {
             updateBioData(bio: bio!)
@@ -77,10 +77,10 @@ class EditProfileViewController: UIViewController {
     func updateNameData(name:String){
         db.collection("users").document(Auth.auth().currentUser!.uid).setData([ "firstname": name ], merge: true)
     }
+
     func updateSurnameData(name:String){
         db.collection("users").document(Auth.auth().currentUser!.uid).setData([ "firstname": name ], merge: true)
     }
-
     func updateBioData(bio:String){
         db.collection("users").document(Auth.auth().currentUser!.uid).setData([ "bio": bio ], merge: true)
     }
