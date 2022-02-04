@@ -13,22 +13,22 @@ class CategoryVC: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    let category = ["General", "Business", "Science", "Technology", "Health", "Entertainment", "Sports"]
-    var articles: [Article] = []
+    let categories = ["General", "Business", "Science", "Technology", "Health", "Entertainment", "Sports"]
+//    var article: [Article] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureCollectionView()
-        configureNavbarAndSearchbar()
+        configCollectionView()
+        configNavbarAndSearchbar()
     }
     
-    func configureCollectionView() {
+    func configCollectionView() {
         categoryCollectionView.dataSource = self
         categoryCollectionView.delegate = self
         categoryCollectionView.register(UINib(nibName: Constants.categoryCell, bundle: .main), forCellWithReuseIdentifier: Constants.categoryCellID)
     }
     
-    func configureNavbarAndSearchbar() {
+    func configNavbarAndSearchbar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "News"
         searchBar.delegate = self
@@ -40,12 +40,12 @@ class CategoryVC: UIViewController {
 
 extension CategoryVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return category.count
+        return categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.categoryCellID, for: indexPath) as! CategoryCell
-        let categoryName = category[indexPath.row]
+        let categoryName = categories[indexPath.row]
         
         switch categoryName {
         case Constants.general:
@@ -77,7 +77,7 @@ extension CategoryVC: UICollectionViewDataSource {
 
 extension CategoryVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedCategory = category[indexPath.row]
+        let selectedCategory = categories[indexPath.row]
         NetworkManager.singleton.getArticles(passedInCategory: selectedCategory.lowercased()) { result in
             switch result {
             case let .success(gotArticles):
@@ -85,7 +85,7 @@ extension CategoryVC: UICollectionViewDelegate {
                 let sampleStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let headLineVC  = sampleStoryBoard.instantiateViewController(withIdentifier: Constants.headlinesCellID) as! HeadlinesVC
                 headLineVC.headlines = gotArticles!
-                headLineVC.category = self.category[indexPath.row]
+                headLineVC.category = self.categories[indexPath.row]
                 self.navigationController?.pushViewController(headLineVC, animated: true)
                 
             case let .failure(gotError):
