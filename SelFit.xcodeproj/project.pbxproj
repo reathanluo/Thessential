@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E6DE3D227AC453B004A3B9A /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6DE3D127AC453B004A3B9A /* NoteViewController.swift */; };
-		0E6DE3D527AC4A4E004A3B9A /* NoteCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E6DE3D327AC4A4E004A3B9A /* NoteCoreData.xcdatamodeld */; };
-		0E6DE3D727AC4B25004A3B9A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6DE3D627AC4B25004A3B9A /* Note.swift */; };
+		0E6DE3D227AC453B004A3B9A /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6DE3D127AC453B004A3B9A /* NoteDetailVC.swift */; };
 		0E6DE3DB27AC9B97004A3B9A /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6DE3DA27AC9B97004A3B9A /* NoteCell.swift */; };
 		0E6DE3DD27AC9BA7004A3B9A /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6DE3DC27AC9BA7004A3B9A /* NoteTableView.swift */; };
 		5249FBB127AB93ED0025443F /* TaskDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249FBB027AB93ED0025443F /* TaskDAL.swift */; };
@@ -66,9 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E6DE3D127AC453B004A3B9A /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
-		0E6DE3D427AC4A4E004A3B9A /* NoteCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteCoreData.xcdatamodel; sourceTree = "<group>"; };
-		0E6DE3D627AC4B25004A3B9A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		0E6DE3D127AC453B004A3B9A /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 		0E6DE3DA27AC9B97004A3B9A /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		0E6DE3DC27AC9BA7004A3B9A /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
 		5249FBB027AB93ED0025443F /* TaskDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDAL.swift; sourceTree = "<group>"; };
@@ -140,9 +136,7 @@
 		0ED2C0CF27AC2B8C0051B92C /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				0E6DE3D127AC453B004A3B9A /* NoteViewController.swift */,
-				0E6DE3D327AC4A4E004A3B9A /* NoteCoreData.xcdatamodeld */,
-				0E6DE3D627AC4B25004A3B9A /* Note.swift */,
+				0E6DE3D127AC453B004A3B9A /* NoteDetailVC.swift */,
 				0E6DE3DA27AC9B97004A3B9A /* NoteCell.swift */,
 				0E6DE3DC27AC9BA7004A3B9A /* NoteTableView.swift */,
 			);
@@ -409,12 +403,10 @@
 				A69713CE2797FF560047D10F /* UIView+Extension.swift in Sources */,
 				A66A4D3827AAD80F004E7178 /* Constants.swift in Sources */,
 				0E6DE3DD27AC9BA7004A3B9A /* NoteTableView.swift in Sources */,
-				0E6DE3D727AC4B25004A3B9A /* Note.swift in Sources */,
 				A63ABA2027A64B8B008A4920 /* RegisterLoginViewController.swift in Sources */,
 				A66A4D4827AAD940004E7178 /* HeadlinesCell.swift in Sources */,
 				A6DF4011278D6EAB0076A0FC /* ViewController.swift in Sources */,
 				A63ABA1B27A644A7008A4920 /* LoginViewController.swift in Sources */,
-				0E6DE3D527AC4A4E004A3B9A /* NoteCoreData.xcdatamodeld in Sources */,
 				A6A7248127A6C10D00145617 /* ProfileViewController.swift in Sources */,
 				A69713D4279805A30047D10F /* OnboardingCollectionViewCell.swift in Sources */,
 				A6DF400D278D6EAB0076A0FC /* AppDelegate.swift in Sources */,
@@ -430,7 +422,7 @@
 				A66A4D3627AAD7DB004E7178 /* Colors.swift in Sources */,
 				52FAD68E27A49A34002CF1B8 /* Event.swift in Sources */,
 				A66A4D4627AAD926004E7178 /* CategoryCell.swift in Sources */,
-				0E6DE3D227AC453B004A3B9A /* NoteViewController.swift in Sources */,
+				0E6DE3D227AC453B004A3B9A /* NoteDetailVC.swift in Sources */,
 				A62044E327ABA47E00883A08 /* EditProfileViewController.swift in Sources */,
 				A66A4D3A27AAD82B004E7178 /* NetworkManager.swift in Sources */,
 				52FAD68827A438AD002CF1B8 /* WeeklyViewController.swift in Sources */,
@@ -718,16 +710,6 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		0E6DE3D327AC4A4E004A3B9A /* NoteCoreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0E6DE3D427AC4A4E004A3B9A /* NoteCoreData.xcdatamodel */,
-			);
-			currentVersion = 0E6DE3D427AC4A4E004A3B9A /* NoteCoreData.xcdatamodel */;
-			path = NoteCoreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		A6DF4015278D6EAB0076A0FC /* SelFit.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
