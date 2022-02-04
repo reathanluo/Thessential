@@ -123,11 +123,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NJr-kE-79w" secondAttribute="bottom" constant="40" id="i0d-ti-FBI"/>
                             <constraint firstItem="Iib-Nb-cnt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="par-vK-zBd"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Iib-Nb-cnt" id="iat-Iq-7HU"/>
@@ -276,11 +271,6 @@
                             <constraint firstItem="ZZs-XI-IAb" firstAttribute="leading" secondItem="QKn-6d-eHO" secondAttribute="leading" constant="20" id="wJ9-ta-1n0"/>
                             <constraint firstItem="OKV-Y1-qTz" firstAttribute="leading" secondItem="QKn-6d-eHO" secondAttribute="leading" constant="20" id="z7c-2d-qg4"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="m7b-OH-JvP"/>
                     <connections>
@@ -331,7 +321,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input new bio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaI-9d-SLA">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input new name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaI-9d-SLA">
                                 <rect key="frame" x="110.5" y="234" width="283.5" height="34"/>
 >>>>>>> d122d0d04e009270313e1a07d83b8b119fbcbd45
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -609,11 +599,6 @@
                             <constraint firstItem="jSG-TN-eJj" firstAttribute="centerX" secondItem="45l-UO-Ipk" secondAttribute="centerX" id="wVv-iO-zY4"/>
                             <constraint firstItem="pl4-ui-X6e" firstAttribute="leading" secondItem="45l-UO-Ipk" secondAttribute="leading" id="yLJ-8O-eZZ"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Monthly Calendar" id="cBw-9c-UiQ">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="xbz-d9-St6">
@@ -916,11 +901,6 @@
                             <constraint firstItem="AGR-Fm-7bx" firstAttribute="leading" secondItem="c0Y-lW-AbE" secondAttribute="leading" constant="5" id="sU8-70-5yi"/>
                             <constraint firstItem="VB8-v9-oWA" firstAttribute="leading" secondItem="c0Y-lW-AbE" secondAttribute="leading" id="zuZ-qV-yt2"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="snb-aT-CU8"/>
                     <connections>
@@ -1027,14 +1007,13 @@
         <!--Notes-->
         <scene sceneID="ReQ-td-0B5">
             <objects>
-                <tableViewController id="h2b-nA-nom" customClass="NoteTableView" customModule="SelFit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="h2b-nA-nom" customClass="NoteTableView" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="II1-yZ-JdK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="separatorColor" systemColor="systemGreenColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCellID" id="jV8-3g-qKZ" customClass="NoteCell" customModule="SelFit" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCellID" id="jV8-3g-qKZ" customClass="NoteCell" customModule="NoteAppCoreData" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jV8-3g-qKZ" id="wh8-8i-pJB">
@@ -1073,11 +1052,6 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="h2b-nA-nom" id="xDz-jZ-2BH"/>
                             <outlet property="delegate" destination="h2b-nA-nom" id="DI4-fZ-D8j"/>
@@ -1123,7 +1097,7 @@
         <!--Note Details-->
         <scene sceneID="Ddo-j4-LlQ">
             <objects>
-                <viewController id="Yda-pa-cDV" customClass="NoteDetailVC" customModule="SelFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yda-pa-cDV" customClass="NoteDetailVC" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DFg-bQ-Kuu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1252,9 +1226,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
