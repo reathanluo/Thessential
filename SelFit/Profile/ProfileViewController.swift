@@ -13,15 +13,14 @@ class ProfileViewController: UIViewController {
     let db = Firestore.firestore()
 
     @IBOutlet weak var bioLblData: UILabel!
-    @IBOutlet weak var bioLbl: UILabel!
-    @IBOutlet weak var emailLbl: UILabel!
+//    @IBOutlet weak var bioLbl: UILabel!
+    @IBOutlet weak var emailLbl: UIButton!
     @IBOutlet weak var nameLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Profile"
-        self.emailLbl.text = Auth.auth().currentUser!.email
+//        title = "Profile"
+        self.emailLbl.setTitle(Auth.auth().currentUser!.email, for: .normal)
 
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

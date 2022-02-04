@@ -42,6 +42,7 @@
 		A689AF5B279C0F49005D41BF /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF5A279C0F49005D41BF /* UserDefaults+Extension.swift */; };
 		A689AF5E279C10D3005D41BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A689AF5D279C10D3005D41BF /* HomeViewController.swift */; };
 		A68E583827AD3B1100D6A460 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = A68E583727AD3B1100D6A460 /* SkyFloatingLabelTextField */; };
+		A68E583A27AD659D00D6A460 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68E583927AD659D00D6A460 /* ProfileImageView.swift */; };
 		A69713CB2797F4440047D10F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69713CA2797F4440047D10F /* OnboardingViewController.swift */; };
 		A69713CE2797FF560047D10F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69713CD2797FF560047D10F /* UIView+Extension.swift */; };
 		A69713D0279801BA0047D10F /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69713CF279801BA0047D10F /* OnboardingSlide.swift */; };
@@ -98,6 +99,7 @@
 		A689AF58279C0D99005D41BF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A689AF5A279C0F49005D41BF /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		A689AF5D279C10D3005D41BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A68E583927AD659D00D6A460 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		A69713CA2797F4440047D10F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A69713CD2797FF560047D10F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A69713CF279801BA0047D10F /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				A6A7248027A6C10D00145617 /* ProfileViewController.swift */,
 				A62044E227ABA47E00883A08 /* EditProfileViewController.swift */,
+				A68E583927AD659D00D6A460 /* ProfileImageView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				A6DF4011278D6EAB0076A0FC /* ViewController.swift in Sources */,
 				A63ABA1B27A644A7008A4920 /* LoginViewController.swift in Sources */,
 				A6A7248127A6C10D00145617 /* ProfileViewController.swift in Sources */,
+				A68E583A27AD659D00D6A460 /* ProfileImageView.swift in Sources */,
 				A69713D4279805A30047D10F /* OnboardingCollectionViewCell.swift in Sources */,
 				A6DF400D278D6EAB0076A0FC /* AppDelegate.swift in Sources */,
 				A63ABA1927A64499008A4920 /* SignUpViewController.swift in Sources */,
