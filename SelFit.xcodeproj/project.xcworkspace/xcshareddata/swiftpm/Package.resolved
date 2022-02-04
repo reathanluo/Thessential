@@ -110,6 +110,15 @@
         }
       },
       {
+        "package": "SkyFloatingLabelTextField",
+        "repositoryURL": "https://github.com/Skyscanner/SkyFloatingLabelTextField.git",
+        "state": {
+          "branch": null,
+          "revision": "a0750ebbc7311f3b3debf99c5e59338e854afa59",
+          "version": "4.0.0"
+        }
+      },
+      {
         "package": "SwiftProtobuf",
         "repositoryURL": "https://github.com/apple/swift-protobuf.git",
         "state": {

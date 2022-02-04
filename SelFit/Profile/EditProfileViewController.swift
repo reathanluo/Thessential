@@ -8,10 +8,12 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import SkyFloatingLabelTextField
 
 
 class EditProfileViewController: UIViewController {
 
+    @IBOutlet weak var surnameTF: UITextField!
     let db = Firestore.firestore()
     @IBOutlet weak var pwTF: UITextField!
     @IBOutlet weak var bioTF: UITextField!
@@ -19,16 +21,19 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
     }
     
     @IBAction func saveBtn(_ sender: Any) {
         let username = nameTF.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let surname = surnameTF.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let bio = bioTF.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = pwTF.text?.trimmingCharacters(in: .whitespacesAndNewlines)
 
         if (username != "") {
             updateNameData(name: username!)
+        }
+        if (surname != "") {
+            updateSurnameData(name: surname!)
         }
 
         
@@ -70,6 +75,9 @@ class EditProfileViewController: UIViewController {
     }
     
     func updateNameData(name:String){
+        db.collection("users").document(Auth.auth().currentUser!.uid).setData([ "firstname": name ], merge: true)
+    }
+    func updateSurnameData(name:String){
         db.collection("users").document(Auth.auth().currentUser!.uid).setData([ "firstname": name ], merge: true)
     }
 
